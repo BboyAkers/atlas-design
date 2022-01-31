@@ -15,7 +15,7 @@ Looking for information about the Atlas CSS framework? Start at the [/css README
 ## Development
 
 - Ensure [git](https://git-scm.com/) is installed.
-- Ensure that have downloaded and installed a version of [NodeJS](https://nodejs.org/en/download/releases/) that supports monorepos. It's currently recommended you download NodeJS version 16.6.\* and use with NPM at a greater version than 7.19.1.
+- Ensure that have downloaded and installed a version of [NodeJS](https://nodejs.org/en/download/releases/) that supports monorepos. It's currently recommended you download NodeJS version 16.13.\* and use with NPM at a greater version than 8.3.2.
 - Alternatively, you can install NPM with NVM: [mac](https://github.com/nvm-sh/nvm) | [windows](https://github.com/coreybutler/nvm-windows).
 - If contributing code, please read about using [changesets](https://github.com/atlassian/changesets) and [semantic versioning bump types](https://semver.org/).
 - Clone the repostory.
@@ -64,3 +64,14 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+## Updating dependencies
+
+The following commands can be used to update broadly update dependencies. (Note: we omit major updates to husky because of major api changes and a general preference for version 4.x)
+
+```
+npm exec --package npm-check-updates --workspaces --include-workspace-root -- npm-check-updates --upgrade --reject husky
+npm exec --package npm-check-updates --workspaces --include-workspace-root -- npm-check-updates --upgrade --target minor
+rm package-lock.json
+npm i
+```

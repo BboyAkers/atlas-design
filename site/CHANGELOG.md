@@ -1,5 +1,32 @@
 # @microsoft/atlas-site
 
+## 0.17.0
+
+### Minor Changes
+
+- 2e4d5fb: Add checkbox component.
+- 21a6973: Add width Atomic classes and relevant documentation.
+
+### Patch Changes
+
+- 9e17017: Add figma design file to the popover page.
+
+## 0.16.1
+
+### Patch Changes
+
+- 9c5ec09: Add data-popover-close attribute to allow an additional closing method to the popover.
+
+## 0.16.0
+
+### Minor Changes
+
+- 6ef8090: add link button documentation and a reference to it in .button docs
+
+### Patch Changes
+
+- ffe7c88: Add small border to .popover-content, equivalent to .border class.
+
 ## 0.15.0
 
 ### Minor Changes

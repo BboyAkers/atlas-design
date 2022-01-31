@@ -1,5 +1,28 @@
 # @microsoft/atlas-css
 
+## 3.9.0
+
+### Minor Changes
+
+- 2e4d5fb: Add checkbox component.
+- 21a6973: Add width Atomic classes and relevant documentation.
+
+### Patch Changes
+
+- 6ab0c3e: Details bare element box-sizing bugfix.
+
+## 3.8.2
+
+### Patch Changes
+
+- 43b3463: Update bare-element styling on details > \* to be more specific. Previous details box sizing fix was not being applied.
+
+## 3.8.1
+
+### Patch Changes
+
+- ffe7c88: Add small border to .popover-content, equivalent to .border class.
+
 ## 3.8.0
 
 ### Minor Changes
