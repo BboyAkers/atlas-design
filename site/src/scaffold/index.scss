@@ -4,22 +4,20 @@
 @import './styles/overflow.scss';
 @import './code-block.scss';
 
-@include tablet {
-	#nav-mobile {
-		position: fixed;
-		margin-top: 1em;
-		left: 0;
-		height: 100%;
-		width: 250px;
-	}
-	.sidebar.open {
-		animation-name: showSidebar;
-		transform: translate(0, 0);
-		animation-duration: 1s;
-	}
-	.sidebar {
-		transform: translate(-280px, 0);
-	}
+.sidebar.open {
+	animation-name: showSidebar;
+	transform: translate(0, 0);
+	animation-duration: 1s;
+}
+.sidebar {
+	transform: translate(-280px, 0);
+}
+#nav-mobile {
+	position: fixed;
+	margin-top: 1em;
+	left: 0;
+	height: 100%;
+	width: 250px;
 }
 
 @include desktop {

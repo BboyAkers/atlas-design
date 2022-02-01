@@ -12,6 +12,15 @@ $size-bar-width: 300px - strip-units($gap-size) * $document-font-size;
 	max-width: 100%;
 	overflow-x: hidden;
 
+	display: grid;
+	grid-template: auto 1fr auto auto; // [ rows / columns ]
+
+	grid-template-areas:
+		'header'
+		'main'
+		'aside'
+		'footer';
+
 	@include tablet {
 		display: grid;
 		grid-template: auto 1fr auto auto / $size-bar-width 1fr; // [ rows / columns ]
@@ -170,9 +179,6 @@ html.debug {
 
 	#nav {
 		@include debug('nav');
-		// to animate the placement of the navigation
-		// transform: translate(calc(-100% + 2rem), 0);
-		// transition: transform 200ms linear;
 	}
 
 	#aside {
