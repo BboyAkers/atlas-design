@@ -12,6 +12,10 @@
 .sidebar {
 	transform: translate(-280px, 0);
 }
+
+.inner-sidebar {
+	top: 80px;
+}
 #nav-mobile {
 	position: fixed;
 	margin-top: 1em;
